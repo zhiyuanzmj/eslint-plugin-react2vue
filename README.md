@@ -8,17 +8,9 @@
 
 _description_
 
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
-
 ## License
 
-[MIT](./LICENSE) License © [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © [Anthony Fu](https://github.com/zhiyuanzmj)
 
 <!-- Badges -->
 
@@ -28,7 +20,7 @@ _description_
 [npm-downloads-href]: https://npmjs.com/package/eslint-plugin-react2vue
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/eslint-plugin-react2vue?style=flat&colorA=080f12&colorB=1fa669&label=minzip
 [bundle-href]: https://bundlephobia.com/result?p=eslint-plugin-react2vue
-[license-src]: https://img.shields.io/github/license/antfu/eslint-plugin-react2vue.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/eslint-plugin-react2vue/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/zhiyuanzmj/eslint-plugin-react2vue.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-href]: https://github.com/zhiyuanzmj/eslint-plugin-react2vue/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
 [jsdocs-href]: https://www.jsdocs.io/package/eslint-plugin-react2vue
