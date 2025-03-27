@@ -30,6 +30,7 @@ eslint.config.ts
 
 ```ts
 import parserTs from '@typescript-eslint/parser'
+import react2vue from 'eslint-plugin-react2vue'
 
 export default {
   files: ['**/*.tsx'],
