@@ -8,7 +8,7 @@
 
 This is an ESLint plugin for converting the React Hooks API to the Vue Composition API for [vue-jsx-vapor](https://github.com/vuejs/vue-jsx-vapor).
 
-Suggestion use [unplugin-auto-imports](https://github.com/unplugin/unplugin-auto-import) for auto imports Vue Composition API.
+Suggest using [unplugin-auto-imports](https://github.com/unplugin/unplugin-auto-import) to automatically import the Vue Composition API.
 
 ## Setup
 
