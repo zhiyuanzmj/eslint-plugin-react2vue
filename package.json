@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react2vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@10.6.2",
   "description": "_description_",
   "type": "module",
