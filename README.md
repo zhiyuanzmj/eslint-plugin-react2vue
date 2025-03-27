@@ -66,7 +66,7 @@ const [foo, setFoo] = useState(count)
 console.log([foo, setFoo(1), setFoo])
 
 // after
-const [foo, setFoo] = useState(0)
+const foo = ref(0)
 console.log([foo.value, foo.value = 1, val => foo.value = val])
 ```
 
