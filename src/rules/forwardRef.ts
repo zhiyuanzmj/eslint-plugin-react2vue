@@ -24,11 +24,15 @@ export default {
             node: node.callee,
             messageId: "forwardRef",
             fix(fixer) {
+              const argument = node.arguments[0];
               return [
-                fixer.removeRange([node.range[0], node.arguments[0].range[0]]),
-                fixer.removeRange([node.arguments[0].range[1], node.range[1]]),
-                isFunctionalNode(node.arguments[0])
-                  ? fixer.remove(node.arguments[0].params[1])
+                fixer.removeRange([node.range[0], argument.range[0]]),
+                fixer.removeRange([argument.range[1], node.range[1]]),
+                isFunctionalNode(argument)
+                  ? fixer.removeRange([
+                      argument.params[0].range[1],
+                      argument.params[1].range[1],
+                    ])
                   : null,
               ].filter((i) => !!i);
             },

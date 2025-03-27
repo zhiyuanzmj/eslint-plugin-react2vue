@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/zhiyuanzmj/eslint-plugin-react2vue.git"
   },
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "zhiyuanzmj",
   "funding": "https://github.com/sponsors/zhiyuanzmj",
   "files": [
     "dist"
