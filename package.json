@@ -1,33 +1,33 @@
 {
   "name": "eslint-plugin-react2vue",
-  "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.6.2",
   "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "type": "module",
+  "keywords": [],
   "license": "MIT",
-  "funding": "https://github.com/sponsors/zhiyuanzmj",
   "homepage": "https://github.com/zhiyuanzmj/eslint-plugin-react2vue#readme",
+  "bugs": "https://github.com/zhiyuanzmj/eslint-plugin-react2vue/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhiyuanzmj/eslint-plugin-react2vue.git"
   },
-  "bugs": "https://github.com/zhiyuanzmj/eslint-plugin-react2vue/issues",
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
-  },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "funding": "https://github.com/sponsors/zhiyuanzmj",
   "files": [
     "dist"
   ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "build": "tsup",
+    "dev": "DEV=true tsup",
     "lint": "eslint",
     "prepublishOnly": "nr build",
     "release": "bumpp && pnpm publish",
@@ -37,18 +37,20 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "catalog:cli",
     "@antfu/ni": "catalog:cli",
     "@antfu/utils": "catalog:inlined",
+    "@sxzz/eslint-config": "^6.1.0",
     "@types/node": "catalog:types",
+    "@typescript-eslint/types": "catalog:",
+    "@typescript-eslint/utils": "catalog:",
     "bumpp": "catalog:cli",
     "eslint": "catalog:cli",
     "lint-staged": "catalog:cli",
     "simple-git-hooks": "catalog:cli",
     "tinyexec": "catalog:utils",
+    "tsup": "catalog:",
     "tsx": "catalog:cli",
     "typescript": "catalog:cli",
-    "unbuild": "catalog:cli",
     "vite": "catalog:cli",
     "vitest": "catalog:testing",
     "vitest-package-exports": "catalog:testing",

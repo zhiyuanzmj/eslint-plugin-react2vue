@@ -1,9 +1,7 @@
 // @ts-check
-import antfu from '@antfu/eslint-config'
+import { sxzz } from "@sxzz/eslint-config";
 
-export default antfu(
-  {
-    type: 'lib',
-    pnpm: true,
-  },
-)
+export default sxzz().removeRules(
+  "import/no-default-export",
+  "unicorn/filename-case",
+);
