@@ -10,6 +10,12 @@ This is an ESLint plugin for converting the React Hooks API to the Vue Compositi
 
 Suggest using [unplugin-auto-imports](https://github.com/unplugin/unplugin-auto-import) to automatically import the Vue Composition API.
 
+## Install
+
+```sh
+pnpm add eslint-plugin-react2vue
+```
+
 ## Setup
 
 .vscode/settings.json
@@ -58,6 +64,8 @@ export default {
   },
 }
 ```
+
+## Rules
 
 ### useState
 
@@ -117,7 +125,6 @@ const Comp = defineComponent(({ count = 1 }) => {
 })
 ```
 
-
 ### defineSlots
 
 Use `defineSlots` instead of `children` prop.
@@ -135,7 +142,6 @@ const Comp = ({ children }) => {
 }
 ```
 
-
 ### useCallback
 
 Remove useCallback.
@@ -151,7 +157,6 @@ const callback = () => {
   console.log(foo)
 }
 ```
-
 
 ### forwardRef
 
@@ -169,10 +174,9 @@ const Comp = ({ count }) => {
 }
 ```
 
-
 ### useImperativeHandle
 
-Use `defineExpose` instead of `useImperativeHandle`
+Use `defineExpose` instead of `useImperativeHandle`.
 
 ```tsx
 // before
@@ -195,8 +199,6 @@ const Comp = ({ count }) => {
   return <div>{count}</div>
 }
 ```
-
-
 
 ## License
 
