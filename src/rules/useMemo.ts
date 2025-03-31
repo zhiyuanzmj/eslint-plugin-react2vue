@@ -14,7 +14,6 @@ export default {
     schema: [],
   },
   create(context: RuleContext<"useMemo", []>): RuleListener {
-    const ids: Record<string, any> = {};
     return {
       VariableDeclarator(node) {
         if (node.init?.type !== "CallExpression" || !node.id) return;
@@ -24,7 +23,6 @@ export default {
           init.callee.name === "useMemo" &&
           id?.type === "Identifier"
         ) {
-          ids[id.name] = id;
           context.report({
             node: init.callee,
             messageId: "useMemo",
