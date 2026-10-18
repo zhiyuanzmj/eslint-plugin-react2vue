@@ -11,15 +11,15 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version: yzs/*
           registry-url: https://registry.npmjs.org/
 
       - run: pnpm dlx changelogithub
@@ -32,4 +32,4 @@ jobs:
       # - run: pnpm publish --no-git-checks -r --access public
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      #     NPM_CONFIG_PROVENANCE: true
+      #     NPM_CONFIG_PROVENANCE: true/continue-on-error: 
